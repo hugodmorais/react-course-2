@@ -1,23 +1,15 @@
 import React, { Component } from 'react';
-import './App.css';
 
-import { Posts } from './components/Posts'
-import { loadPosts } from './utils/load-posts';
-class App extends Component {
+import './styles.css';
+
+import { Posts } from '../../components/Posts'
+import { loadPosts } from '../../utils/load-posts';
+
+export class Home extends Component {
   state = {
     posts: []
   }
 
-  // Lifecycle methods
-  // async componentDidMount() {
-  //   await this.loadPosts();
-  // }
-
-  // loadPosts = async () => {
-  //   const postsAndPhotos = loadPosts();
-
-  //   this.setState({ posts: postsAndPhotos })
-  // }
   // Lifecycle methods
   async componentDidMount() {
     await this.loadPosts();
@@ -39,5 +31,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
