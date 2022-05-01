@@ -1,6 +1,7 @@
 import './styles.css';
 
-export const PostCard = ({id, title, cover, body}) => {
+export const PostCard = ({title, cover, body, id}) => {
+  debugger
   return (
     <div className="post">
       <img src={cover} alt={title} />

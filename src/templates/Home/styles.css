@@ -8,6 +8,14 @@
   min-height: 100px;
   display: flex;
   align-items: flex-end;
+}
+
+.search-container {
+  margin-bottom: 30px;
+}
+
+.search-container h1 {
+  margin-bottom: 30px;
 } 
 
 .posts {
